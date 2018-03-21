@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hide{
+    display: none;
+}
+.elevator-wrapper{
+    text-align: center;
+}
+.elevator-level{
+    margin-bottom: -5px;
+    position: relative;
+}
+.door{
+    background: url("../images/close.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100px;
+    height: 160px;
+    display: inline-block;
+    position: relative;
+
+}
+.door.opened{
+    background: url("../images/open.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.indicator{
+    display: inline-block;
+    background: #000;
+    color: #f00;
+    padding: 0px 15px;
+    margin-top: 5px;
+    min-width: 25px;
+}
+.direction.up{
+    border: solid 6px #f00;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    display: inline-block;
+}
+.direction.down{
+    border: solid 6px #f00;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    display: inline-block;
+}
+
+.call{
+    position: absolute;
+    /*width: 50px;*/
+    right: -110px;
+    background: #eaece9;
+    border:  solid 5px #858c96;
+    padding: 5px 15px;
+}
+.call-button{
+    width: 20px;
+    height: 20px;
+    background: #2c2c4e;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.call-button.active{
+    color: #00ff00;
+    border:solid 4px #0f0;
+}

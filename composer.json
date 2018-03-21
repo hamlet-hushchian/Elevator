@@ -1,0 +1,19 @@
+{
+  "name": "hamletua/elevator",
+  "license": "proprietary",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Application\\": "application/src",
+      "Core\\": "core/src",
+      "Dispatcher\\": "module/dispatcher/src",
+      "Winch\\": "module/winch/src",
+      "Level\\": "module/level/src",
+      "Elevator\\": "module/elevator/src"
+    }
+  },
+  "require": {
+    "php": ">=5.6",
+    "cboden/ratchet": "^0.4.1"
+  }
+}
